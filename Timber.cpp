@@ -161,6 +161,31 @@ int main() {
 	// The player starts on the left
 	side playerSide = side::LEFT;
 
+	// prepare the gravestone
+	Texture textureRip;
+	textureRip.loadFromFile("graphics/rip.png");
+	Sprite spriteRip;
+	spriteRip.setTexture(textureRip);
+	spriteRip.setPosition(600, 860);
+
+	//prepare the axe
+	Texture textureAxe;
+	textureAxe.loadFromFile("graphics/axe.png");
+	Sprite spriteAxe;
+	spriteAxe.setTexture(textureAxe);
+	spriteAxe.setPosition(700, 830);
+
+	// Line the axe up with the tree
+	const float AXE_POSITION_LEFT = 700;
+	const float AXE_POSITION_RIGHT = 1075;
+
+	// prepare the flying log
+	Texture textureLog;
+	textureLog.loadFromFile("graphics/log.png");
+	Sprite spriteLog;
+	spriteLog.setTexture(textureLog);
+	spriteLog.setPosition(810, 720);
+
 	// Game Loop starts here
 	while (window.isOpen()) {
 		// handle the players input
