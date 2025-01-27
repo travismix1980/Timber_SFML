@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs/Timber/FileContentIndex/0b67e8f3-aa66-4023-affd-acfacab17234.vsidx
+/.vs
+/Debug
+/Timber/Debug
